@@ -3,8 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
+    --knigthmare: #040714;
+    --flashpoint: #09102b;
 }
+/*MENU*/
 .menu{
+    width: 100%;
     background: #040714;
     height: 100px;
     display: flex;
@@ -16,17 +21,48 @@
     width: 90px;
     height: auto;
 }
+/*CAIXA DE TÍTULO*/
+.box{
+    text-align: center;
+    padding: 50px;
+    color: var(--color-font);
+}
+/*PLANOS DE ASSINATURA*/
+.planos{
+    background: #040714;
+    height: 100vh;
+}
+.planos .container .zack-snyder{
+    background: var(--flashpoint);
+    text-align: center;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 20px #6610f2;
+    border-radius: 20px;
+}
+.plano img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+/*CATÁLOGO DE FILMES*/
 .filmes{
-    height: 150vh;
-}
+    background: #040714;
+    height: 190vh;
+ }
 .filmes .container .filme img{
-    width: 250px;
-    height: 350px;
+    border-radius: 20px;
+    height: 450px;
+    width: auto;
+    box-shadow: 0 5px 20px #6610f2;
 }
-.filmes .container{
-    width: 100%;
+.filmes .container .card{
+    background: none;
+    border: none;
 }
-.servicos-banner{
+/*BANNER PARALAX*/
+.banner{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/background.jpg);
     background-size: cover;
     background-position: center top;
@@ -34,28 +70,33 @@
     background-attachment: fixed;
     height: 100vh;
 }
-.servicos-banner .box{
-    color: #fff;
-    text-align: center;
-    padding: 50px;
+.banner .container .row form{
+    width: 50%;
+    max-width: 100%;
+    position: relative;
 }
-.servicos-banner .col i{
-    margin-bottom: 50px;
-    font-size: 50px;
-    color: #0d6efd;
+.banner .container .row form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #0d6efd;
+    outline: none;
+    border-radius: 30px;
 }
-.servicos-banner .col{
-    color: #000;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff45;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    margin: auto 10px;
-    height: 300px;
+.banner .container .row form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #0d6efd;
+    box-shadow: 0 0 5px #000, 0 0 15px #858585;
+    top: 6px;
+    right: 20px;
 }
-.dispositivos .container .row i{
-    font-size: 100px;
-    display: flex;
-}
+/*SERVIÇOS*/
+.servicos{
+    height: 100vh;
+  }
+
